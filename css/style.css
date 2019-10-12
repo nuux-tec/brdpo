@@ -563,6 +563,16 @@ textarea.form-control {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    padding: 1rem 0;
+  }
+
+  .navbar-brand img {
+    height: 45px;
+  }
+}
+
 .nav-bg {
   background-color: #1a1a37;
 }
@@ -717,7 +727,17 @@ link:focus,
 }
 
 .hero-section {
-  padding: 250px 0 290px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding: 5em 0;
+  }
+
+  .hero-slider .text-white {
+    font-size: 40px;
+  }
 }
 
 .hero-slider .prevArrow,
@@ -787,34 +807,13 @@ link:focus,
 
 .feature-blocks {
   /* padding-left: 70px; */
-  padding-top: 80px;
+  /* padding-top: 80px; */
   /* padding-right: 30%; */
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 767px) {
   .feature-blocks {
-    /* padding-right: 10%; */
-  }
-}
-
-@media (max-width: 1200px) {
-  .feature-blocks {
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 30px;
-  }
-  .feature-blocks h3 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 991px) {
-  .feature-blocks {
-    margin-top: 0;
-    padding: 50px;
-  }
-  .feature-blocks h3 {
-    font-size: 25px;
+    padding: 0;
   }
 }
 
@@ -1017,6 +1016,12 @@ link:focus,
 
 .filter-controls li:hover {
   color: #258cd1;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 4em 0;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
