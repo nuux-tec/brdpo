@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="181.73" height="191.232" viewBox="0 0 181.73 191.232">
+  <defs>
+    <filter id="Caminho_19" x="0" y="0" width="181.73" height="191.232" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Camada_2" data-name="Camada 2" transform="translate(52.507 52.501)">
+    <g id="Layer_1" data-name="Layer 1">
+      <g transform="matrix(1, 0, 0, 1, -52.51, -52.5)" filter="url(#Caminho_19)">
+        <path id="Caminho_19-2" data-name="Caminho 19" d="M62.292,57.468a14.22,14.22,0,0,0-8.736,3.045L28.575,45.384a16.149,16.149,0,0,0,.208-2.364,16.13,16.13,0,0,0-.208-2.345l24.98-14.92a14.22,14.22,0,0,0,8.736,2.988A14.372,14.372,0,1,0,47.939,14.372a13.69,13.69,0,0,0,.208,2.345l-25,15a14.372,14.372,0,1,0,0,22.692l25,15a13.919,13.919,0,0,0-.208,2.458,14.372,14.372,0,1,0,14.353-14.38Z" transform="translate(52.55 52.5)" fill="#258cd1"/>
+      </g>
+    </g>
+  </g>
+</svg>

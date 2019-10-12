@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.654" height="190.574" viewBox="0 0 190.654 190.574">
+  <defs>
+    <filter id="Caminho_8" x="52.348" y="52.268" width="138.306" height="138.306" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_9" x="0" y="0" width="169.276" height="169.276" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Camada_2" data-name="Camada 2" transform="translate(52.618 52.538)">
+    <g id="Layer_1" data-name="Layer 1">
+      <g transform="matrix(1, 0, 0, 1, -52.62, -52.54)" filter="url(#Caminho_8)">
+        <path id="Caminho_8-2" data-name="Caminho 8" d="M59.378,48.042,39.756,28.42A37.9,37.9,0,0,1,28.42,39.756L48.042,59.378A8.016,8.016,0,1,0,59.378,48.042Z" transform="translate(76.43 76.35)" fill="#258cd1"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -52.62, -52.54)" filter="url(#Caminho_9)">
+        <path id="Caminho_9-2" data-name="Caminho 9" d="M64.148,32.087A32.138,32.138,0,1,0,32.009,64.228,32.137,32.137,0,0,0,64.148,32.087ZM32.069,56.138a24.068,24.068,0,1,1,24.05-24.05,24.068,24.068,0,0,1-24.05,24.05Z" transform="translate(52.63 52.55)" fill="#258cd1"/>
+      </g>
+      <path id="Caminho_10" data-name="Caminho 10" d="M7.27,25.992h5.347A13.394,13.394,0,0,1,25.974,12.617V7.27A18.74,18.74,0,0,0,7.27,25.992Z" transform="translate(6.105 6.105)" fill="#258cd1"/>
+    </g>
+  </g>
+</svg>

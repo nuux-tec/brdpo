@@ -819,7 +819,7 @@ link:focus,
 
 /* banner feature */
 .feature-icon {
-  font-size: 50px;
+  /* font-size: 50px; */
   color: #258cd1;
   display: inline-block;
 }
@@ -828,6 +828,16 @@ link:focus,
   /* padding-left: 70px; */
   /* padding-top: 80px; */
   /* padding-right: 30%; */
+}
+
+.service {
+  margin-bottom: 3em;
+}
+
+.service-icon {
+  margin-bottom: 1.5em;
+  width: auto;
+  height: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1054,3 +1064,4 @@ link:focus,
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
