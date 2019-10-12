@@ -236,12 +236,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #ffcd6e;
+  background: #0e354f;
   color: #fff;
 }
 
 ::selection {
-  background: #ffcd6e;
+  background: #0e354f;
   color: #fff;
 }
 
@@ -320,6 +320,12 @@ a h4:hover {
 .section {
   padding-top: 90px;
   padding-bottom: 90px;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 3em 0;
+  }
 }
 
 .section-sm {
@@ -582,7 +588,7 @@ textarea.form-control {
 }
 
 .nav-item {
-  margin: 0 15px;
+  margin: 0 25px;
   position: relative;
 }
 
@@ -734,9 +740,18 @@ link:focus,
   height: 100vh;
 }
 
+.hero-slider {
+  padding-top: 3em;
+}
+
 @media screen and (max-width: 767px) {
   .hero-section {
     padding: 5em 0;
+  }
+
+  .hero-slider {
+    padding-top: 0;
+    margin-top: -5em;
   }
 
   .hero-slider .text-white {
@@ -1025,6 +1040,16 @@ link:focus,
 @media screen and (max-width: 767px) {
   .footer {
     padding: 4em 0;
+  }
+}
+
+.about-image {
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-image {
+    margin-top: 2em;
   }
 }
 
