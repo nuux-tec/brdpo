@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="187.327" height="191.23" viewBox="0 0 187.327 191.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0080ff;
+      }
+
+      .cls-2 {
+        filter: url(#Caminho_21);
+      }
+
+      .cls-3 {
+        filter: url(#Caminho_18);
+      }
+    </style>
+    <filter id="Caminho_18" x="0" y="0" width="163.869" height="191.23" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_21" x="46.48" y="40.198" width="140.847" height="151.032" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Cadeado" transform="translate(52.5 52.5)">
+    <g id="Camada_2" data-name="Camada 2" transform="translate(0 0)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+        <g id="Padlock">
+          <g class="cls-3" transform="matrix(1, 0, 0, 1, -52.5, -52.5)">
+            <path id="Caminho_18-2" data-name="Caminho 18" class="cls-1" d="M50.833,37.71V21.655a21.407,21.407,0,1,0-42.8,0V37.71A8.036,8.036,0,0,0,0,45.729v32.11a8.036,8.036,0,0,0,8.036,8.036h42.8a8.036,8.036,0,0,0,8.036-8.036V45.729a8.036,8.036,0,0,0-8.036-8.019ZM13.456,21.655a16.055,16.055,0,1,1,32.093,0V37.71H13.388ZM53.517,77.839a2.684,2.684,0,0,1-2.684,2.684H8.036a2.684,2.684,0,0,1-2.684-2.684V45.729a2.684,2.684,0,0,1,2.684-2.667h42.8a2.684,2.684,0,0,1,2.684,2.667ZM32.11,59.864v-6.1a2.684,2.684,0,1,0-5.352,0v6.1a5.352,5.352,0,1,0,5.352,0Z" transform="translate(52.5 52.85)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Camada_2-2" data-name="Camada 2" transform="translate(46.48 48.381) rotate(-21)">
+      <g id="Layer_1-2" data-name="Layer 1" transform="translate(0 0)">
+        <g class="cls-2" transform="matrix(0.93, 0.36, -0.36, 0.93, -56.25, -129.65)">
+          <path id="Caminho_21-2" data-name="Caminho 21" class="cls-1" d="M0,0V30.413l9.131-4.062,6.076,14.191,5.069-2.56L14.3,24.03l8.533-3.78Z" transform="translate(98.98 100.88) rotate(-21)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

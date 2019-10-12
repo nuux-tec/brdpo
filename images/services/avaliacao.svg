@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190.54" height="190.54" viewBox="0 0 190.54 190.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0080ff;
+      }
+
+      .cls-2 {
+        filter: url(#Caminho_9);
+      }
+
+      .cls-3 {
+        filter: url(#Caminho_8);
+      }
+    </style>
+    <filter id="Caminho_8" x="52.234" y="52.234" width="138.306" height="138.306" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Caminho_9" x="0" y="0" width="169.158" height="169.158" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Camada_2" data-name="Camada 2" transform="translate(52.5 52.5)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+      <g class="cls-3" transform="matrix(1, 0, 0, 1, -52.5, -52.5)">
+        <path id="Caminho_8-2" data-name="Caminho 8" class="cls-1" d="M59.378,48.042,39.756,28.42A37.9,37.9,0,0,1,28.42,39.756L48.042,59.378A8.016,8.016,0,1,0,59.378,48.042Z" transform="translate(76.31 76.31)"/>
+      </g>
+      <g class="cls-2" transform="matrix(1, 0, 0, 1, -52.5, -52.5)">
+        <path id="Caminho_9-2" data-name="Caminho 9" class="cls-1" d="M64.148,32.087a32.138,32.138,0,1,0,0,.006ZM32.069,56.138a24.068,24.068,0,1,1,24.05-24.05,24.069,24.069,0,0,1-24.05,24.05Z" transform="translate(52.51 52.51)"/>
+      </g>
+      <path id="Caminho_10" data-name="Caminho 10" class="cls-1" d="M7.27,25.992h5.347A13.394,13.394,0,0,1,25.974,12.617V7.27A18.74,18.74,0,0,0,7.27,25.992Z" transform="translate(6.105 6.105)"/>
+    </g>
+  </g>
+</svg>

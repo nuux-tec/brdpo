@@ -811,6 +811,11 @@ link:focus,
   /* padding-right: 30%; */
 }
 
+.service-icon{
+  width: calc(100px + 5vw);
+  height: calc(100px + 5vh);
+}
+
 @media screen and (max-width: 767px) {
   .feature-blocks {
     padding: 0;
@@ -1025,3 +1030,4 @@ link:focus,
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
