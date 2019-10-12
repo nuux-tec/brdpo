@@ -838,6 +838,12 @@ link:focus,
   margin-bottom: 1.5em;
   width: auto;
   height: 50px;
+
+  transition: all .3s;
+}
+
+.service:hover .service-icon {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 767px) {
