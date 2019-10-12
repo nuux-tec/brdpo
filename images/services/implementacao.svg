@@ -1,26 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="173.389" height="190.482" viewBox="0 0 173.389 190.482">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="173.389" height="190.48" viewBox="0 0 173.389 190.48">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #0080ff;
-      }
-
-      .cls-2 {
-        filter: url(#Caminho_7);
-      }
-
-      .cls-3 {
-        filter: url(#Caminho_6);
-      }
-    </style>
-    <filter id="Caminho_6" x="5.692" y="0" width="162.006" height="167.68" filterUnits="userSpaceOnUse">
+    <filter id="Caminho_6" x="5.69" y="0" width="162.006" height="167.68" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="17.5" result="blur"/>
       <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Caminho_7" x="0" y="62.68" width="173.389" height="127.802" filterUnits="userSpaceOnUse">
+    <filter id="Caminho_7" x="0" y="62.68" width="173.389" height="127.8" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
       <feFlood flood-color="#0080ff" flood-opacity="0.302"/>
@@ -30,11 +17,11 @@
   </defs>
   <g id="Camada_2" data-name="Camada 2" transform="translate(52.5 52.5)">
     <g id="Layer_1" data-name="Layer 1">
-      <g class="cls-3" transform="matrix(1, 0, 0, 1, -52.5, -52.5)">
-        <path id="Caminho_6-2" data-name="Caminho 6" class="cls-1" d="M31.674,62.68,60.186,34.2H43.075V0H20.291l.089,34.2H3.18Z" transform="translate(55.01 52.5)"/>
+      <g transform="matrix(1, 0, 0, 1, -52.5, -52.5)" filter="url(#Caminho_6)">
+        <path id="Caminho_6-2" data-name="Caminho 6" d="M31.674,62.68,60.186,34.2H43.075V0H20.291l.089,34.2H3.18Z" transform="translate(55.01 52.5)" fill="#258cd1"/>
       </g>
-      <g class="cls-2" transform="matrix(1, 0, 0, 1, -52.5, -52.5)">
-        <path id="Caminho_7-2" data-name="Caminho 7" class="cls-1" d="M56.988,35.02V46.439H11.4V35.02H0v22.8H68.389V35.02Z" transform="translate(52.5 80.16)"/>
+      <g transform="matrix(1, 0, 0, 1, -52.5, -52.5)" filter="url(#Caminho_7)">
+        <path id="Caminho_7-2" data-name="Caminho 7" d="M56.988,35.02V46.439H11.4V35.02H0v22.8H68.389V35.02Z" transform="translate(52.5 80.16)" fill="#258cd1"/>
       </g>
     </g>
   </g>
