@@ -1145,3 +1145,7 @@ section.cta {
   background-image: url('../images/bg-cta-min.png');
   background-size: cover;
 }
+
+.ajax-content {
+  line-height: 1.7;
+}

@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     '<a href="notice-single.html?news_id='+ data[x].id +'">'+
                         '<h4 class="card-title">'+ data[x].name+'</h4>'+
                     '</a>'+
-                    '<p class="card-text">'+ data[x].name+'</p>'+
                     '<a href="notice-single.html?news_id=' + data[x].id +'" class="btn btn-primary btn-sm">Leia mais</a>'+
                     '</div>'+
                 '</div>'+

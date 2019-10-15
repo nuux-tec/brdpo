@@ -2,11 +2,9 @@
 
 document.addEventListener("DOMContentLoaded", function(){   
     
-    const containerNotice = document.getElementById("notice-container");
+    const containerNotice = document.getElementById("home-news-cards");
     
-
     const url = "http://brdpo-cms.herokuapp.com/api/news";
-       
     
     //  REQUISIÇÃO 
 
@@ -21,21 +19,24 @@ document.addEventListener("DOMContentLoaded", function(){
         
         /* apresenta 3 cards na tela */
         for(x; x >= data.length-3;x--){    	
-            
             // vai concatenando o HTML
-            html += 
-            '<li class="d-md-table mb-4 w-100 border-bottom hover-shadow">'+
-              '<div class="d-md-table-cell text-center p-4 bg-primary text-white mb-4 mb-md-0 ">'+
-              '<span class="h2 d-block">30</span> Abril,2019</div>'+
-              '<div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0">'+
-                '<a href="notice-single.html" class="h4 mb-3 d-block">'+ data[x].name+'</a>'+
-                '<p class="mb-0">'+ data[x].content+'</p>'+
-              '</div>'+
-              '<div class="d-md-table-cell text-right pr-0 pr-md-4"><a href="notice-single.html"'+
-                  'class="btn btn-primary">leia mais</a></div>'+
-           ' </li>';
-                   
-        
+            html +=
+            '<article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">' +
+            '<div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">' +
+            '<img class="card-img-top rounded-0" src="' + data[x].image + '" alt="Post thumb">' +
+            '<div class="card-body">' +
+
+            '<ul class="list-inline mb-3">' +
+            '<li class="list-inline-item mr-3 ml-0">' + data[x].day + '/' + data[x].month + '/' + data[x].year + '</li>' +
+            '</ul>' +
+
+            '<a href="notice-single.html?news_id=' + data[x].id + '">' +
+            '<h4 class="card-title">' + data[x].name + '</h4>' +
+            '</a>' +
+            '<a href="notice-single.html?news_id=' + data[x].id + '" class="btn btn-primary btn-sm">Leia mais</a>' +
+            '</div>' +
+            '</div>' +
+            '</article>';
         } 
         
         containerNotice.innerHTML = html; // insere o conteúdo na div
