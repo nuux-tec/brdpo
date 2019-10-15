@@ -40,7 +40,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 60px;
+  font-size: calc(20px + 2vw);
+}
+
+.title-paragraf{
+  font-size: calc(10px + 2vw);
+  line-height: 1.2em;
 }
 
 @media (max-width: 575px) {
@@ -230,6 +235,10 @@ h6, .h6 {
   color: #fff;
 }
 
+.anchor{
+  position: absolute;
+  margin: -12vh;
+}
 body {
   background-color: #fff;
   overflow-x: hidden;
@@ -574,6 +583,9 @@ textarea.form-control {
   .navbar-nav {
     padding-left: 0;
   }
+  .anchor{
+    margin:0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -758,8 +770,9 @@ link:focus,
   }
 
   .hero-slider .text-white {
-    font-size: 40px;
+    font-size: calc(20px + 1vw);
   }
+  
 }
 
 .hero-slider .prevArrow,
