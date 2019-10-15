@@ -82,6 +82,10 @@ document.addEventListener("DOMContentLoaded", function(){
                     '<a href="#">'+
                         '<h4 class="card-title">'+data[x].name+'D</h4>'+
                     '</a>'+
+
+                    '<p class="card-text">' + data[x].name + '</p>' +
+                    '<a href="#" class="btn btn-primary btn-sm">Ver evento</a>' +
+                    '</div>' +
                     '</div>'+
                 '</div>'+
             '</div>';

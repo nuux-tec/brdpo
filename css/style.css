@@ -498,6 +498,12 @@ a h4:hover {
   background-size: cover; 
 }
 
+@media screen and (max-width: 767px) {
+  .page-title-section {
+    padding: 5em 0 1em;
+  }
+}
+
 .bg-ps-b{
   background-position: bottom;
 }
