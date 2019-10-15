@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>BRDPO</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -23,24 +24,25 @@
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-  
+
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<!-- header -->
-<header class="fixed-top header">
-  <!-- navbar -->
-  <div class="navigation w-100">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light p-0">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- header -->
+  <header class="fixed-top header">
+    <!-- navbar -->
+    <div class="navigation w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+          <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
 
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
@@ -48,13 +50,13 @@
               <a class="nav-link" href="index.html">Início</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="index.html#about-container">Sobre nós</a>
             </li>
             <li class="nav-item @@events">
-              <a class="nav-link" href="#">Eventos</a>
+              <a class="nav-link" href="events.html">Eventos</a>
             </li>
             <li class="nav-item @@courses">
-              <a class="nav-link" href="#">Cursos</a>
+              <a class="nav-link" href="courses.html">Cursos</a>
             </li>
             <li class="nav-item @@contact">
               <a class="nav-link" href="#">Contato</a>
@@ -62,110 +64,143 @@
           </ul>
         </div>
       </nav>
-    </div>
   </div>
-</header>
-<!-- /header -->
+ </div>
+  </header>
+  <!-- /header -->
 
-<!-- hero slider -->
-<section class="hero-section overlay bg-cover" data-background="images/backgrounds/background-title2.jpg">
-  <div class="container d-flex align-items-center h-100">
-    <div class="hero-slider">
-      <!-- slider item -->
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
-              Consultoria em Proteção de Dados e Privacidade
-            </h1>
-            <a href="#" class="btn btn-primary mt-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Saiba mais</a>
+  <!-- hero slider -->
+  <section class="hero-section overlay bg-cover" data-background="images/backgrounds/background-title2.jpg">
+    <div class="container d-flex align-items-center h-100">
+      <div class="hero-slider">
+        <!-- slider item -->
+        <div class="hero-slider-item">
+          <div class="row">
+            <div class="col-md-10">
+              <h1 class="text-white hero-title">
+                Prepare sua empresa
+                <div class="d-none d-md-block"></div>
+                para a LGPD e GDPR
+              </h1>
+              <p class="text-white title-paragraf">
+                Tecnologia e Consultoria, Proteção de Dados, Gestão de Riscos e Integridade, Governança, Compliance, Controles e Treinamento.
+              </p>
+              <a href="#about-container" class="btn btn-primary mt-4" data-animation-out="fadeOutRight" data-delay-out="5"
+                data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Saiba mais</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /hero slider -->
+  </section>
+  <!-- /hero slider -->
 
-<!-- about us -->
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h2 class="section-title">Sobre nós</h2>
-        <p>BRDPO surge para suprir as necessidades de adequação das empresas às exigências da Lei n.º 13.709/2018, Lei Geral de Proteção de Dados – LGPD e General Data Protection Regulation (EU) 2016/679 (GDPR), para tanto, contamos com um corpo
-          técnico multidisciplinar, DPO's certificados internacionalmente e uma renomada equipe jurídica, fruto de nossa parceria
-          com a <a href="http://vcladvogados.com.br/">VCL & Advogados Associados</a>.</p>
-      </div>
+  <!-- about us -->
+  <div class="anchor" id="about-container"></div>
+  <section class="section pb-4">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <div class="about-wrapper">
+          <h2 class="section-title">Sobre nós</h2>
+          <p>A BRDPO conta com corpo técnico multidisciplinar, DPO's certificados internacionalmente, 
+            com larga experiência em Gestão, Governança e Contencioso, nos setores público e privado, 
+            conta com uma renomada equipe jurídica para acompanhar e preparar sua empresa para as 
+            exigências da LGPD e da GDPR - General Data Protection Regulation (EU.2016/679). 
+            Em parceria com a <a href="http://vcladvogados.com.br/">VCL & Advogados Associados</a> oferecemos uma estrutura e equipe completa 
+            para acompanhar sua empresa em todas as etapas desse processo.
+            </p>
+        </div>
         
-      <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
         <img class="img-fluid about-image" src="images/logo-maior.svg" alt="about image">
       </div>
-    </div>
-  </div>
-</section>
-<!-- /about us -->
+    </div>    
+  </section>
+  <!-- /about us -->
 
-<!-- banner-feature -->
-<section class="bg-gray section">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-title">Nossos serviços</h2>
-      <div class="section-paragraf">
-        Acompanharemos sua empresa em todas as etapas
-        <div class="d-none d-md-block"></div>
-        necessárias para o devido cumprimento da LGPD.
+  <!-- about partners -->
+  <div class="anchor" id="about-container"></div>
+  <section class="section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center partner">
+        <img class="img-fluid partner-image rounded" src="images/logo-parceiro.png" alt="about image">
+
+        <div class="partner-wrapper">
+          <h2 class="section-title">Sobre nosso parceiro</h2>
+          <p>Valadares, Coelho, Leal e Advogados Associados é uma sociedade de advogados que
+          se caracteriza pela sólida formação acadêmica e foco na solução prática dos problemas
+          de seus clientes. Referência regional e nacional, o escritório possui forte atuação
+          consultiva e contenciosa. Nosso parceiro conto com uma banca composta por advogados
+          mestres e doutores, consultores com destacada atuação nacional e internacional e equipe
+          treinada de legal advisors, paralegais e funcionários.
+          </p>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!-- /about partners -->
+
+  <!-- banner-feature -->
+  <section class="bg-gray section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Nossos serviços</h2>
+        <div class="section-paragraf">
+          Acompanharemos sua empresa em todas as etapas necessárias para o devido
+          <div class="d-none d-md-block"></div>
+          cumprimento da LGPD e GDPR: <strong>ADEQUAÇÃO</strong>, <strong>ACOMPANHAMENTO</strong>, <strong>CONTENCIOSO</strong> e <strong>TREINAMENTO</strong>.
+        </div>
+      </div>
+
+      <div class="row mt-5 pt-2 feature-blocks bg-gray justify-content-between">
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/preparacao.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Preparação</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/organizacao.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Organização</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/implementacao.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Implementação</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/governanca.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Governança</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/cybersegurança.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Cibersegurança</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service">
+          <img src="images/services/compilance.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Compliance</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service m-0">
+          <img src="images/services/avaliacao.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Avaliação</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service m-0">
+          <img src="images/services/treinamentos.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Treinamentos para LGPD</h3>
+        </div>
+
+        <div class="col-md-4 col-6 text-center service m-0">
+          <img src="images/services/formacao dpos.png" class="service-icon feature-icon" />
+          <h3 class="mb-xl-4 mb-lg-3 mb-4 service-name">Formação de DPO's</h3>
+        </div>
       </div>
     </div>
-
-    <div class="row mt-5 pt-2 feature-blocks bg-gray justify-content-between">
-      <div class="col-md-4 text-center service">
-        <img src="images/services/preparacao.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Preparação</h3>
-      </div>
-      <div class="col-md-4  text-center service">
-        <img src="images/services/organizacao.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Organização</h3>
-      </div>
-      <div class="col-md-4  text-center service">
-        <img src="images/services/implementacao.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Implementação</h3>
-      </div>
-    </div>
-
-    <div class="row feature-blocks bg-gray justify-content-between">
-      <div class="col-md-4 text-center service">
-        <img src="images/services/governanca.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Governança</h3>
-      </div>
-      <div class="col-md-4 text-center service">
-        <img src="images/services/treinamentos.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Treinamentos para LGPD</h3>
-      </div>
-      <div class="col-md-4 text-center service">
-        <img src="images/services/avaliacao.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Avaliação</h3>
-      </div>
-    </div>
-
-    <div class="row feature-blocks bg-gray justify-content-between">
-      <div class="col-md-4 text-center service m-0">
-        <img src="images/services/formacao dpos.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Formação de DPO's</h3>
-      </div>
-      <div class="col-md-4 text-center service m-0">
-        <img src="images/services/cybersegurança.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Cibersegurança</h3>
-      </div>
-      <div class="col-md-4 text-center service m-0">
-        <img src="images/services/compilance.png" class="service-icon feature-icon"/>
-        <h3 class="mb-xl-4 mb-lg-3 mb-4">Compliance</h3>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /banner-feature -->
-
+  </section>
+  <!-- /banner-feature -->
+  
 <!-- courses -->
 <section class="section-sm">
   <div class="container">
@@ -175,15 +210,15 @@
           <h2 class="mb-0 text-nowrap mr-3">Nossos cursos</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="#" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Ver todos</a>
+            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Ver todos</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- course list -->
-    <div class="row justify-content-center">
-      <!-- course item -->
-      <div class="col-lg-4 col-sm-6 mb-5">
+      <!-- course list -->
+      <div id="home-curses-cards" class="row justify-content-center">
+        <!-- course item -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
           <div class="card-body">
@@ -199,9 +234,9 @@
             <a href="#" class="btn btn-primary btn-sm">Ver curso</a>
           </div>
         </div>
-      </div>
-      <!-- course item -->
-      <div class="col-lg-4 col-sm-6 mb-5">
+      </div> -->
+        <!-- course item -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
           <div class="card-body">
@@ -217,9 +252,9 @@
             <a href="#" class="btn btn-primary btn-sm">Ver curso</a>
           </div>
         </div>
-      </div>
-      <!-- course item -->
-      <div class="col-lg-4 col-sm-6 mb-5">
+      </div> -->
+        <!-- course item -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card p-0 border-primary rounded-0 hover-shadow">
           <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
           <div class="card-body">
@@ -235,21 +270,21 @@
             <a href="#" class="btn btn-primary btn-sm">Ver curso</a>
           </div>
         </div>
+      </div> -->
+      </div>
+      <!-- /course list -->
+      <!-- mobile see all button -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">Ver todos</a>
+        </div>
       </div>
     </div>
-    <!-- /course list -->
-    <!-- mobile see all button -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="#" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">Ver todos</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /courses -->
+  </section>
+  <!-- /courses -->
 
-<!-- cta -->
-<!-- <section class="section bg-primary">
+  <!-- cta -->
+  <!-- <section class="section bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -260,10 +295,10 @@
     </div>
   </div>
 </section> -->
-<!-- /cta -->
+  <!-- /cta -->
 
-<!-- success story -->
-<!-- <section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+  <!-- success story -->
+  <!-- <section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-4 position-relative success-video">
@@ -281,7 +316,8 @@
     </div>
   </div>
 </section> -->
-<!-- /success story -->
+  <!-- /success story -->
+
 
 <!-- events -->
 <section class="section bg-gray">
@@ -292,159 +328,171 @@
           <h2 class="mb-0 text-nowrap mr-3">Próximos eventos</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="#" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Ver todos</a>
+            <a href="events.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">Ver todos</a>
           </div>
         </div>
       </div>
     </div>
-  <div class="row justify-content-center">
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
-        <div class="card-date"><span>18</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Harvard, Usa</p>
-        <a href="#"><h4 class="card-title">Curso da LGPD</h4></a>
-      </div>
-    </div>
-  </div>
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
-        <div class="card-date"><span>21</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Cambridge, USA</p>
-        <a href="#"><h4 class="card-title">Curso da LGPD</h4></a>
-      </div>
-    </div>
-  </div>
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-3.jpg" alt="event thumb">
-        <div class="card-date"><span>23</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-        <a href="#"><h4 class="card-title">Curso da LGPD</h4></a>
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- mobile see all button -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="#" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">Ver todos</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /events -->
-
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title">Notícias</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
-          <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
-        </ul>
-        <!--<a href="blog-single.html">-->
-        <a href="#">
-          <h4 class="card-title">Impactos da LGPD no Brasil</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
-      </div>
-    </div>
-  </article>
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
-          <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
-        </ul>
-        <!--<a href="blog-single.html">-->
-        <a href="#">
-          <h4 class="card-title">Impactos da LGPD no Brasil</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
-      </div>
-    </div>
-  </article>
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
-          <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
-        </ul>
-        <!--<a href="blog-single.html">-->
-        <a href="#">
-          <h4 class="card-title">Impactos da LGPD no Brasil</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
-      </div>
-    </div>
-  </article>
-</div>
-  </div>
-</section>
-<!-- /blog -->
-
-<!-- footer -->
-<footer>
-  <!-- newsletter -->
-  <div class="newsletter d-none d-md-block">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Inscreva-se agora</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Seu melhor email...">
-              <button type="submit" value="send" class="btn btn-primary">Inscrever-se</button>
+      <div id="home-events-cards" class="row justify-content-center">
+        <!-- event -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+              <div class="card-date"><span>18</span><br>December</div>
             </div>
-          </form>
+            <div class="card-body"> -->
+              <!-- location -->
+              <!-- <p><i class="ti-location-pin text-primary mr-2"></i>Harvard, Usa</p>
+              <a href="#">
+                <h4 class="card-title">Curso da LGPD</h4>
+              </a>
+            </div>
+          </div>
+        </div> -->
+        <!-- event -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
+              <div class="card-date"><span>21</span><br>December</div>
+            </div>
+            <div class="card-body"> -->
+              <!-- location -->
+              <!-- <p><i class="ti-location-pin text-primary mr-2"></i>Cambridge, USA</p>
+              <a href="#">
+                <h4 class="card-title">Curso da LGPD</h4>
+              </a>
+            </div>
+          </div>
+        </div> -->
+        <!-- event -->
+        <!-- <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div class="card border-0 rounded-0 hover-shadow">
+            <div class="card-img position-relative">
+              <img class="card-img-top rounded-0" src="images/events/event-3.jpg" alt="event thumb">
+              <div class="card-date"><span>23</span><br>December</div>
+            </div>
+            <div class="card-body"> -->
+              <!-- location -->
+              <!-- <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
+              <a href="#">
+                <h4 class="card-title">Curso da LGPD</h4>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- mobile see all button -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">Ver todos</a>
         </div>
       </div>
     </div>
+  </section>
+  <!-- /events -->
+
+  <!-- blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-title">Notícias</h2>
+        </div>
+      </div>
+      <div id="home-news-cards" class="row justify-content-center">
+        <!-- blog post -->
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div
+            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+            <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+            <div class="card-body">
+              <!-- post meta -->
+              <ul class="list-inline mb-3">
+                <!-- post date -->
+                <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
+                <!-- author -->
+                <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
+              </ul>
+              <!--<a href="blog-single.html">-->
+              <a href="#">
+                <h4 class="card-title">Impactos da LGPD no Brasil</h4>
+              </a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+              <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+            </div>
+          </div>
+        </article>
+        <!-- blog post -->
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div
+            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+            <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+            <div class="card-body">
+              <!-- post meta -->
+              <ul class="list-inline mb-3">
+                <!-- post date -->
+                <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
+                <!-- author -->
+                <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
+              </ul>
+              <!--<a href="blog-single.html">-->
+              <a href="#">
+                <h4 class="card-title">Impactos da LGPD no Brasil</h4>
+              </a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+              <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+            </div>
+          </div>
+        </article>
+        <!-- blog post -->
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <div
+            class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+            <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+            <div class="card-body">
+              <!-- post meta -->
+              <ul class="list-inline mb-3">
+                <!-- post date -->
+                <li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>
+                <!-- author -->
+                <li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>
+              </ul>
+              <!--<a href="blog-single.html">-->
+              <a href="#">
+                <h4 class="card-title">Impactos da LGPD no Brasil</h4>
+              </a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+              <a href="#" class="btn btn-primary btn-sm">Leia mais</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+
+  <!-- footer -->
+  <footer>
+    <!-- newsletter -->
+    <div class="newsletter d-none d-md-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+            <h3 class="text-white">Inscreva-se agora</h3>
+            <form action="#">
+              <div class="input-wrapper">
+                <input type="email" class="form-control border-0" id="newsletter" name="newsletter"
+                  placeholder="Seu melhor email...">
+                <button type="submit" value="send" class="btn btn-primary">Inscrever-se</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <!-- footer content -->
   <div class="footer bg-footer section border-bottom">
@@ -474,9 +522,9 @@
         <!-- links -->
         <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-md-5">
           <h4 class="text-white mb-3">LINKS</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="#">Cursos</a></li>
-            <li class="mb-3"><a class="text-color" href="#">Eventos</a></li>
+          <ul class="list-unstyled">            
+            <li class="mb-3"><a class="text-color" href="events.html">Eventos</a></li>
+            <li class="mb-3"><a class="text-color" href="courses.html">Cursos</a></li>
             <li class="mb-3"><a class="text-color" href="#">Notícias</a></li>
           </ul>
         </div>
@@ -499,35 +547,44 @@
         </div>
         <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://pt-br.facebook.com/brdpolgpd"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/brdpolgpd"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.instagram.com/brdpo"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" rel="noopener noreferrer"
+               href="https://pt-br.facebook.com/brdpolgpd"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" rel="noopener noreferrer"
+              href="https://twitter.com/brdpolgpd"><i class="ti-twitter-alt text-primary"></i></a></li>            
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" rel="noopener noreferrer"
+              href="https://www.instagram.com/brdpo"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/brpdo-lgpd-620817194"><i class="ti-linkedin text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" rel="noopener noreferrer"
+              href="https://www.youtube.com/channel/UCBJjwEhAA-XAk6UaUCobM9w"><i class="ti-youtube text-primary"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-</footer>
-<!-- /footer -->
+  </footer>
+  <!-- /footer -->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- aos -->
-<script src="plugins/aos/aos.js"></script>
-<!-- venobox popup -->
-<script src="plugins/venobox/venobox.min.js"></script>
-<!-- mixitup filter -->
-<script src="plugins/mixitup/mixitup.min.js"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-<script src="plugins/google-map/gmap.js"></script>
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- venobox popup -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- mixitup filter -->
+  <script src="plugins/mixitup/mixitup.min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>
