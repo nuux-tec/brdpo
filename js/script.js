@@ -90,7 +90,9 @@
 document.addEventListener("DOMContentLoaded", function(){   
     
     const containerCurses = document.getElementById("home-curses-cards");
-    const containerevents = document.getElementById("home-events-cards");
+    const containerEvents = document.getElementById("home-events-cards");    
+    const containerNews = document.getElementById("home-news-cards");
+
     const url = "http://brdpo-cms.herokuapp.com";
 
     const endpoint = {
@@ -104,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch(url+endpoint.curses)
     .then((resp) => resp.json()
     .then(function(data){
-        console.log("CURSES");
-        console.log(data);
+        // console.log("CURSES");
+        // console.log(data);
         let html = ``; // declara variável vazia          
                  
         let x = data.length-1;  
@@ -144,8 +146,8 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch(url+endpoint.events)
     .then((resp) => resp.json()
     .then(function(data){
-        console.log("EVENTS");
-        console.log(data);
+        // console.log("EVENTS");
+        // console.log(data);
         let html = ``; // declara variável vazia          
                  
         let x = data.length-1;  
@@ -174,9 +176,54 @@ document.addEventListener("DOMContentLoaded", function(){
         
         } 
         
-        containerevents.innerHTML = html; // insere o conteúdo na div
+        containerEvents.innerHTML = html; // insere o conteúdo na div
         
     })
     ) 
 
+
+    //  REQUISIÇÃO PARA Notícias 
+
+    fetch(url+endpoint.news)
+    .then((resp) => resp.json()
+    .then(function(data){
+        // console.log("notícias");
+        console.log(data);
+        let html = ``; // declara variável vazia          
+                 
+        let x = data.length-1;  
+        
+        /* apresenta 3 cards na tela */
+        for(x; x >= data.length-3;x--){    	
+            
+            // vai concatenando o HTML
+            html += 
+            '<article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">'+
+                '<div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">'+
+                    '<img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">'+
+                    '<div class="card-body">'+
+                   
+                   '<ul class="list-inline mb-3">'+
+                        
+                        '<li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>'+
+                        
+                        '<li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>'+
+                    '</ul>'+
+                   
+                    '<a href="#">'+
+                        '<h4 class="card-title">'+ data[x].name+'</h4>'+
+                    '</a>'+
+                    '<p class="card-text">'+ data[x].name+'</p>'+
+                    '<a href="#" class="btn btn-primary btn-sm">Leia mais</a>'+
+                    '</div>'+
+                '</div>'+
+            '</article>';
+                   
+        
+        } 
+        
+        containerNews.innerHTML = html; // insere o conteúdo na div
+        
+    })
+    ) 
 });
