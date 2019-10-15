@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
             html += 
             '<div class="col-lg-4 col-sm-6 mb-5">'+
                 '<div class="card p-0 border-primary rounded-0 hover-shadow">'+
-                    '<img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">'+
+                    '<img class="card-img-top rounded-0" src="'+data[x].image+'" alt="course thumb">'+
                     '<div class="card-body">'+
                     '<ul class="list-inline mb-2">'+
                         '<li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>'+data[x].date+'</li>'+
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(){
             '<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">'+
                 '<div class="card border-0 rounded-0 hover-shadow">'+
                     '<div class="card-img position-relative">'+
-                    '<img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">'+
+                    '<img class="card-img-top rounded-0" src="'+data[x].image+'" alt="event thumb">'+
                     '<div class="card-date"><span>18</span><br>December</div>'+
                     '</div>'+
                    '<div class="card-body">'+
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(){
     .then((resp) => resp.json()
     .then(function(data){
         // console.log("notícias");
-        // console.log(data);
+        console.log(data);
         let html = ``; // declara variável vazia          
                  
         let x = data.length-1;  
