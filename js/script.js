@@ -89,20 +89,30 @@
 
 document.addEventListener("DOMContentLoaded", function(){   
     
-    const url = "http://brdpo-cms.herokuapp.com/api/courses";    
     const containerCurses = document.getElementById("home-curses-cards");
+    const containerevents = document.getElementById("home-events-cards");
+    const url = "http://brdpo-cms.herokuapp.com";
+
+    const endpoint = {
+        curses : "/api/courses",
+        events : "/api/events",
+        news : "/api/news"
+    };   
     
-    fetch(url)
+    //  REQUISIÇÃO PARA CURSOS 
+
+    fetch(url+endpoint.curses)
     .then((resp) => resp.json()
     .then(function(data){
+        console.log("CURSES");
         console.log(data);
-        let html = ``; // declara variável vazia           
+        let html = ``; // declara variável vazia          
                  
         let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
         for(x; x >= data.length-3;x--){    	
-            console.log("X: "+x)
+            
             // vai concatenando o HTML
             html += 
             '<div class="col-lg-4 col-sm-6 mb-5">'+
@@ -127,5 +137,46 @@ document.addEventListener("DOMContentLoaded", function(){
         containerCurses.innerHTML = html; // insere o conteúdo na div
         
     })
-    )    
+    ) 
+    
+    // REQUISIÇÃO PARA EVENTOS 
+
+    fetch(url+endpoint.events)
+    .then((resp) => resp.json()
+    .then(function(data){
+        console.log("EVENTS");
+        console.log(data);
+        let html = ``; // declara variável vazia          
+                 
+        let x = data.length-1;  
+        
+        /* apresenta 3 cards na tela */
+        for(x; x >= data.length-3;x--){    	
+            
+            // vai concatenando o HTML
+            html += 
+            '<div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">'+
+                '<div class="card border-0 rounded-0 hover-shadow">'+
+                    '<div class="card-img position-relative">'+
+                    '<img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">'+
+                    '<div class="card-date"><span>18</span><br>December</div>'+
+                    '</div>'+
+                   '<div class="card-body">'+
+                    
+                    '<p><i class="ti-location-pin text-primary mr-2"></i>'+data[x].location+'</p>'+
+                    '<a href="#">'+
+                        '<h4 class="card-title">'+data[x].name+'D</h4>'+
+                    '</a>'+
+                    '</div>'+
+                '</div>'+
+            '</div>';
+                   
+        
+        } 
+        
+        containerevents.innerHTML = html; // insere o conteúdo na div
+        
+    })
+    ) 
+
 });
