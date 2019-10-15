@@ -477,9 +477,12 @@ a h4:hover {
 
 /* page title */
 .page-title-section {
-  padding: 200px 0 80px;
+  padding: 200px 0 80px;  
 }
 
+.bg-ps-b{
+  background-position: bottom;
+}
 .custom-breadcrumb li.nasted {
   position: relative;
   padding-left: 25px;
