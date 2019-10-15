@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 '<div class="card border-0 rounded-0 hover-shadow">'+
                     '<div class="card-img position-relative">'+
                     '<img class="card-img-top rounded-0" src="'+data[x].image+'" alt="event thumb">'+
-                    '<div class="card-date"><span>18</span><br>December</div>'+
+                    '<div class="card-date"><span>'+ data[x].day +'</span><br>'+ data[x].month +'/'+ data[x].year +'</div>'+
                     '</div>'+
                    '<div class="card-body">'+
                     
@@ -117,10 +117,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     '<div class="card-body">'+
                    
                    '<ul class="list-inline mb-3">'+
-                        
-                        '<li class="list-inline-item mr-3 ml-0">28 de agosto de 2019</li>'+
-                        
-                        '<li class="list-inline-item mr-3 ml-0">Por Ângela Diniz</li>'+
+                        '<li class="list-inline-item mr-3 ml-0">' + data[x].day  + '/' +  data[x].month + '/' + data[x].year + '</li>'+
                     '</ul>'+
                    
                     '<a href="#">'+
