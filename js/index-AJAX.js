@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function(){
                         '<li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>'+data[x].date+'</li>'+
                         '<li class="list-inline-item"><a class="text-color" href="#">R$ '+ data[x].price +'</a></li>'+
                     '</ul>'+
-                   ' <a href="#">'+
+                    ' <a href="course-single.html?course_id=' + data[x].id +'">'+
                         '<h4 class="card-title mt-3">'+ data[x].name+'</h4>'+
                     '</a>'+
                     '<p class="card-text mb-4">'+data[x].about+'</p>'+
-                    '<a href="#" class="btn btn-primary btn-sm">Ver curso</a>'+
+                        '<a href="course-single.html?course_id=' + data[x].id +'" class="btn btn-primary btn-sm">Ver curso</a>'+
                     '</div>'+
                 '</div>'+
             '</div>';       
@@ -79,12 +79,12 @@ document.addEventListener("DOMContentLoaded", function(){
                    '<div class="card-body">'+
                     
                     '<p><i class="ti-location-pin text-primary mr-2"></i>'+data[x].location+'</p>'+
-                    '<a href="#">'+
+                        '<a href="event-single.html?event_id=' + data[x].id +'">'+
                         '<h4 class="card-title">'+data[x].name+'D</h4>'+
                     '</a>'+
 
                     '<p class="card-text">' + data[x].name + '</p>' +
-                    '<a href="#" class="btn btn-primary btn-sm">Ver evento</a>' +
+                        '<a href="event-single.html?event_id=' + data[x].id +'" class="btn btn-primary btn-sm">Ver evento</a>' +
                     '</div>' +
                     '</div>'+
                 '</div>'+
@@ -124,11 +124,11 @@ document.addEventListener("DOMContentLoaded", function(){
                         '<li class="list-inline-item mr-3 ml-0">' + data[x].day  + '/' +  data[x].month + '/' + data[x].year + '</li>'+
                     '</ul>'+
                    
-                    '<a href="#">'+
+                    '<a href="notice-single.html?news_id='+ data[x].id +'">'+
                         '<h4 class="card-title">'+ data[x].name+'</h4>'+
                     '</a>'+
                     '<p class="card-text">'+ data[x].name+'</p>'+
-                    '<a href="#" class="btn btn-primary btn-sm">Leia mais</a>'+
+                    '<a href="notice-single.html?news_id=' + data[x].id +'" class="btn btn-primary btn-sm">Leia mais</a>'+
                     '</div>'+
                 '</div>'+
             '</article>';
