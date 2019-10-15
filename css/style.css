@@ -1149,3 +1149,7 @@ section.cta {
 .ajax-content {
   line-height: 1.7;
 }
+
+.background-center {
+  background-position: center;
+}

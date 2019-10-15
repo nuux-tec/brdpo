@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function(){
                     '<li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>'+ data[x].date+'</li>'+
                     '<li class="list-inline-item"><a class="text-color" href="#">'+ data[x].category+'</a></li>'+
                     '</ul>'+
-                    '<a href="#">'+
+                    '<a href="course-single.html?course_id=' + data[x].id +'">'+
                     '<h4 class="card-title mt-3">'+ data[x].name+'</h4>'+
                     '</a>'+
                     '<p class="card-text mb-4">'+ data[x].about+'</p>'+
-                    '<a href="#" class="btn btn-primary btn-sm">Ver curso</a>'+
+                    '<a href="course-single.html?course_id=' + data[x].id +'" class="btn btn-primary btn-sm">Ver curso</a>'+
                 '</div>'+
                 '</div>'+
             '</div>';
