@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
       $('.ajax-course-name').text(data.name);
       $('.ajax-image').attr('src', data.image);
       $('.ajax-when').text(data.date);
+      $('.ajax-price').text('R$ ' + data.price);
       $('.ajax-duration').text(data.duration);
       $('.ajax-about').html(data.about);
     })
