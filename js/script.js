@@ -83,3 +83,49 @@
     });
 
 })(jQuery);
+
+
+// FETCH API
+
+document.addEventListener("DOMContentLoaded", function(){   
+    
+    const url = "http://brdpo-cms.herokuapp.com/api/courses";    
+    const containerCurses = document.getElementById("home-curses-cards");
+    
+    fetch(url)
+    .then((resp) => resp.json()
+    .then(function(data){
+        console.log(data);
+        let html = ``; // declara variável vazia           
+                 
+        let x = data.length-1;  
+        
+        /* apresenta 3 cards na tela */
+        for(x; x >= data.length-3;x--){    	
+            console.log("X: "+x)
+            // vai concatenando o HTML
+            html += 
+            '<div class="col-lg-4 col-sm-6 mb-5">'+
+                '<div class="card p-0 border-primary rounded-0 hover-shadow">'+
+                    '<img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">'+
+                    '<div class="card-body">'+
+                    '<ul class="list-inline mb-2">'+
+                        '<li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>'+data[x].date+'</li>'+
+                        '<li class="list-inline-item"><a class="text-color" href="#">R$ '+ data[x].price +'</a></li>'+
+                    '</ul>'+
+                   ' <a href="#">'+
+                        '<h4 class="card-title mt-3">'+ data[x].name+'</h4>'+
+                    '</a>'+
+                    '<p class="card-text mb-4">'+data[x].about+'</p>'+
+                    '<a href="#" class="btn btn-primary btn-sm">Ver curso</a>'+
+                    '</div>'+
+                '</div>'+
+            '</div>';       
+        
+        } 
+        
+        containerCurses.innerHTML = html; // insere o conteúdo na div
+        
+    })
+    )    
+});
