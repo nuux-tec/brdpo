@@ -494,7 +494,8 @@ a h4:hover {
 
 /* page title */
 .page-title-section {
-  padding: 200px 0 80px;  
+  padding: 10em 0 1em; 
+  background-size: cover; 
 }
 
 .bg-ps-b{
@@ -1106,7 +1107,7 @@ link:focus,
   height: 250px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .about-wrapper {
     padding-right: 0;
   }
