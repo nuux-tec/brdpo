@@ -1129,4 +1129,8 @@ link:focus,
     height: auto;
     margin-top: 1em;
   }
+
+  .service-name {
+    font-size: 16px;
+  }
 }
