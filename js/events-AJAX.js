@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", function(){
     
     //  REQUISIÇÃO 
 
-    fetch(url)
+    fetch(url + "?limit=3")
     .then((resp) => resp.json()
     .then(function(data){        
-        console.log(data);
+        console.log(data.length);
 
         let html = ``; // declara variável vazia          
                  
         let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
-        for(x; x >= data.length-3;x--){    	
+        for (x = 0; x < data.length; x++){    	
             
             // vai concatenando o HTML
             html += 

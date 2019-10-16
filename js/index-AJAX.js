@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", function(){
     
     //  REQUISIÇÃO PARA CURSOS 
 
-    fetch(url+endpoint.curses)
+    fetch(url + endpoint.curses + '?limit=3')
     .then((resp) => resp.json()
     .then(function(data){
         // console.log("CURSES");
         // console.log(data);
         let html = ``; // declara variável vazia          
                  
-        let x = data.length-1;  
+        // let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
-        for(x; x >= data.length-3;x--){    	
+        for(x = 0; x < data.length;x++){    	
             
             // vai concatenando o HTML
             html += 
@@ -56,17 +56,17 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // REQUISIÇÃO PARA EVENTOS 
 
-    fetch(url+endpoint.events)
+    fetch(url + endpoint.events + '?limit=3')
     .then((resp) => resp.json()
     .then(function(data){
         // console.log("EVENTS");
         // console.log(data);
         let html = ``; // declara variável vazia          
                  
-        let x = data.length-1;  
+        // let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
-        for(x; x >= data.length-3;x--){    	
+        for (x = 0; x < data.length; x++){    	
             
             // vai concatenando o HTML
             html += 
@@ -101,17 +101,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
     //  REQUISIÇÃO PARA Notícias 
 
-    fetch(url+endpoint.news)
+    fetch(url + endpoint.news + '?limit=3')
     .then((resp) => resp.json()
     .then(function(data){
         // console.log("notícias");
         console.log(data);
         let html = ``; // declara variável vazia          
                  
-        let x = data.length-1;  
+        // let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
-        for(x; x >= data.length-3;x--){    	
+        for (x = 0; x < data.length; x++){    	
             
             // vai concatenando o HTML
             html += 

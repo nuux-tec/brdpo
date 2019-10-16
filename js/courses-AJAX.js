@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
-        for(x; x >= data.length-3;x--){    	
+        for (x = 0; x < data.length; x++){    	
             
             // vai concatenando o HTML
             html += 
