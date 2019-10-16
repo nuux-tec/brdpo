@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function(){
     
     //  REQUISIÇÃO 
 
-    fetch(url + "?limit=3")
+    fetch(url)
     .then((resp) => resp.json()
     .then(function(data){        
         console.log(data.length);
 
         let html = ``; // declara variável vazia          
                  
-        let x = data.length-1;  
+        // let x = data.length-1;  
         
         /* apresenta 3 cards na tela */
         for (x = 0; x < data.length; x++){    	
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 '<div class="card border-0 rounded-0 hover-shadow">'+
                 '<div class="card-img position-relative">'+
                     '<img class="card-img-top rounded-0" src="'+data[x].image+'" alt="event thumb">'+
-                    '<div class="card-date"><span>18</span><br>December</div>'+
+                    '<div class="card-date"><span>' + data[x].day + '</span><br>' + data[x].month + '/' + data[x].year + '</div>' +
                 '</div>'+
                 '<div class="card-body">'+
                     //  location 

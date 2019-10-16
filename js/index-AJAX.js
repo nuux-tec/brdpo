@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     ' <a href="course-single.html?course_id=' + data[x].id +'">'+
                         '<h4 class="card-title mt-3">'+ data[x].name+'</h4>'+
                     '</a>'+
-                    '<p class="card-text mb-4">'+data[x].about+'</p>'+
+                        '<div class="card-text mb-4">' + data[x].resume.slice(0, 100) +'</div>'+
                         '<a href="course-single.html?course_id=' + data[x].id +'" class="btn btn-primary btn-sm">Ver curso</a>'+
                     '</div>'+
                 '</div>'+
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         '<h4 class="card-title">'+data[x].name+'</h4>'+
                     '</a>'+
 
-                    '<p class="card-text">' + data[x].name + '</p>' +
+                    '<p class="card-text">' + data[x].resume.slice(0, 100) + '</p>' +
                         '<a href="event-single.html?event_id=' + data[x].id +'" class="btn btn-primary btn-sm">Ver evento</a>' +
                     '</div>' +
                     '</div>'+
