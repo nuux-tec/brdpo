@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     
                     '<p><i class="ti-location-pin text-primary mr-2"></i>'+data[x].location+'</p>'+
                         '<a href="event-single.html?event_id=' + data[x].id +'">'+
-                        '<h4 class="card-title">'+data[x].name+'D</h4>'+
+                        '<h4 class="card-title">'+data[x].name+'</h4>'+
                     '</a>'+
 
                     '<p class="card-text">' + data[x].name + '</p>' +
